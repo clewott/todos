@@ -1,0 +1,146 @@
+
+// Custom Styles
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  background-image: url("http://subtlepatterns.com/patterns/cloth_alike.png");
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: grey;
+  text-shadow: 0px 1px 0px #0F0F0F;
+}
+
+.container {
+  text-align: center;
+}
+
+.tasks {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  background-color: white;
+  border-top: 15px solid #8D7F7A;
+  border-bottom: 1px dotted grey;
+
+}
+
+.newTaskInput {
+  font-size: 2em;
+  color: #D7D8D9;
+}
+
+.newTask {
+  display: inline-block;
+
+}
+
+.submit {
+  width: 10%;
+  display: inline-block;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.addTodo {
+  height:80px;
+  width: 85%;
+  font-size: 2em;
+  font-style: italic;
+  border: none;
+  border-radius: 1px 1px 0px 0px;
+  padding-left: 20px;
+  border-left: 1px solid red;
+
+}
+
+.remaining_items {
+  display: inline-block;
+  width: 68%;
+  background-color: white;
+  padding: 5px;
+}
+
+.remaining_items li {
+  display: inline-block;
+}
+
+.remaining_items p {
+  margin: 0px;
+  float: left;
+}
+
+.todoList {
+  position: relative;
+  list-style-type: none;
+  background-color: white;
+  width: 70%;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+
+    li {
+      position: relative;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      font-size: 2em;
+      border-bottom: 1px dotted grey;
+      p {
+        margin: 0px;
+        width: 78%;
+        padding: 0px;
+        padding-left: 40px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .checkBox {
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      border: 0px;
+      padding: 0px;
+      height: 42px;
+    }
+    .fa-check {
+      font-size: 1.3em;
+      font-weight: lighter;
+      background-color: white;
+      color: #D7D8D9;
+    }
+    .exitBox {
+      position: absolute;
+      margin: 0px;
+      right: 0px;
+      top: 20px;
+      border: none;
+      background-color: white;
+      .fa-times {
+        color: red;
+        font-size: 2em;
+      }
+
+    }
+}
+
+.editToDo {
+  position: absolute;
+  top: 18px;
+  left: 87px;
+  height: 35px;
+  width: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+.green {
+  color: green;
+}
