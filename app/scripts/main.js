@@ -38,6 +38,7 @@ var myToDo = {
 
       event.preventDefault();
       $(this).closest("ul").find("form").toggleClass("hide");
+      $(this).toggleClass("hidden");
 
     });
 
@@ -53,14 +54,18 @@ var myToDo = {
 
     });
 
-    $(".todoList").on("click", function(event){
+
+    $(".items").on("click", "button", function(event){
 
       event.preventDefault();
-      $(this).children("span").addClass(".green");
+      $(this).find("span").css("color","green");
+      // $(this).find("span").toggleClass(".green");
+      $(this).siblings("p").toggleClass("strike");
     });
 
 
   },
+
 
   render: function (template, data, $el) {
     var markup = _.template(template, data);

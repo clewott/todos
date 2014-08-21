@@ -7,6 +7,7 @@ var postTmpl = [
 
     "<form class=\"hide\" name=\"editTask\">",
       "<input type=\"text\" class=\"editToDo\" name=\"task\" value=\"<%= element.task %>\">",
+      "<input type=\"submit\" class=\"update\" value=\"\">",
         "<button class=\"exitBox\"><i class=\"fa fa-times\"></i></button>",
     "</form>",
   "</ul>",
